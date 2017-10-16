@@ -12,8 +12,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Sarthak Prayas</title>
-
+    <title> Sarthak Prayas</title>
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -39,7 +38,10 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Sarthak Prayas</a>
+                
+                <img src="img/logo.jpg">
+                
+                <!--a class="navbar-brand page-scroll" href="#page-top">Sarthak Prayas</a-->
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -70,15 +72,19 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-heading">SARTHAK PRAYAS</div>
-                <a href="#services" class="page-scroll btn btn-xl">More Details</a>
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <div class="intro-text">
+                    <div class="intro-heading">SARTHAK PRAYAS</div>
+                    <a href="#services" class="page-scroll btn btn-xl">More Details</a>
+                </div>
             </div>
+        </header>
+
+        <div class="alert alert-danger">
+            <h5><center>In case you urgently need blood. Please fill <a href="https://docs.google.com/forms/d/1tyvXCJWtMvD7IL_4tdtwbDTtdRkbFcl0So5aGPCG8kQ/edit?usp=sharing"><font color="red"><b>this form</b></font></a>. For queries contact : +919278957509 or 01145650560.</center></h5> 
         </div>
-    </header>
 
     <!-- Services Section -->
     <section id="services">
@@ -636,6 +642,28 @@
 
     <!-- Theme JavaScript -->
     <script src="js/agency.min.js"></script>
+
+    <script>
+    // Get all elements with class="closebtn"
+    var close = document.getElementsByClassName("closebtn");
+    var i;
+
+    // Loop through all close buttons
+    for (i = 0; i < close.length; i++) {
+        // When someone clicks on a close button
+        close[i].onclick = function(){
+
+            // Get the parent of <span class="closebtn"> (<div class="alert">)
+            var div = this.parentElement;
+
+            // Set the opacity of div to 0 (transparent)
+            div.style.opacity = "0";
+
+            // Hide the div after 600ms (the same amount of milliseconds it takes to fade out)
+            setTimeout(function(){ div.style.display = "none"; }, 600);
+        }
+    }
+    </script>
 
 </body>
 
